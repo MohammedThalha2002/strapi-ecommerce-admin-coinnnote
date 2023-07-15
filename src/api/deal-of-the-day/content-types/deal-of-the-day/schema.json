@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "deal_of_the_days",
+  "info": {
+    "singularName": "deal-of-the-day",
+    "pluralName": "deal-of-the-days",
+    "displayName": "Deal of the Day",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency"
+    }
+  }
+}

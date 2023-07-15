@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "best_sellers",
+  "info": {
+    "singularName": "best-seller",
+    "pluralName": "best-sellers",
+    "displayName": "BestSeller",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "currency": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::currency.currency",
+      "inversedBy": "best_seller"
+    }
+  }
+}
